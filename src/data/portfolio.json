@@ -1,0 +1,107 @@
+{
+  "profile": {
+    "name": "Sepri Iratas",
+    
+    "tagline": "Lulusan S1 - Sistem Informasi",
+    "contact": {
+      "email": "mailto:sepriiratas705@gmail.com",
+      "github": "https://github.com/Ceplin03",
+      "linkedin": "https://linkedin.com/in/Sepri Iratas"
+    }
+  },
+  "projects": [
+    {
+      "id": 1,
+      "title": "Sentinel Analyzer",
+      "category": "Trading Bot",
+      "stack": ["Python", "MetaTrader 5", "Sentiment Analysis", "Ollama", "Exness API"],
+      "description": "Bot trading otomatis berbasis sentimen berita dengan RR ratio 1:2.",
+      "live_demo": "#",
+      "repository": "#",
+      "thumbnail": "../assets/profile.png"
+    },
+    {
+      "id": 2,
+      "title": "Perpustakaan Digital Berbasis Isometrik",
+      "category": "Web Interaktif",
+      "stack": ["PHP", "JavaScript", "Isometric Design", "Tailwind CSS", "MySQL"],
+      "description": "Aplikasi perpustakaan digital dengan desain isometrik yang interaktif dan user-friendly.",
+      "live_demo": "#",
+      "repository": "https://github.com/Ceplin03/Perpustakaan-Digital-Berbasis-Isometric",
+      "thumbnail": "/images/sentinel.jpg"
+    },
+    {
+      "id": 3,
+      "title": "MuntiEggs - E-Commerce Management System",
+      "category": "Web Ecommerce",
+      "stack": ["PHP", "JavaScript", "MySQL"],
+      "description": "Sistem manajemen e-commerce yang memungkinkan pengelolaan produk, pesanan, dan pembayaran secara efisien.",
+      "live_demo": "#",
+      "repository": "https://github.com/Ceplin03/E-Commerce-Peternakan",
+      "thumbnail": "/images/sentinel.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Ceplin Sport - Live Streaming Platform",
+      "category": "Web Streaming Responsive",
+      "stack": ["Laravel 11", "Sport API", "Tailwind CSS"],
+      "description": "Platform streaming live yang memungkinkan pengelolaan konten dan interaksi pengguna secara efisien.",
+      "live_demo": "#",
+      "repository": "#",
+      "thumbnail": "/images/sentinel.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Extension Manga Ai Translator",
+      "category": "Browser Extension",
+      "stack": ["JavaScript", "Ollama API"],
+      "description": "Ekstensi browser yang menerjemahkan manga secara otomatis menggunakan AI, memberikan pengalaman membaca yang lebih baik bagi pengguna.",
+      "live_demo": "#",
+      "repository": "#",
+      "thumbnail": "/images/sentinel.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Chess Bot - Terintegrasi dengan Stockfish",
+      "category": "AI Bot",
+      "stack": ["Python", "Stockfish API"],
+      "description": "Bot catur yang terintegrasi dengan mesin catur Stockfish, memberikan pengalaman bermain yang lebih baik bagi pengguna.",
+      "live_demo": "#",
+      "repository": "#",
+      "thumbnail": "/images/sentinel.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Lite Net Monitoring - Bot Deteksi Jaringan",
+      "category": "Network Monitoring Bot",
+      "stack": ["React", "Node.js", "Express.js","SQLite", "Telegram Bot API"],
+      "description": "Bot monitoring jaringan yang memberikan notifikasi real-time melalui Telegram ketika terjadi gangguan atau perubahan status jaringan pada beberapa perangkat.",
+      "live_demo": "#",
+      "repository": "#",
+      "thumbnail": "/images/sentinel.jpg"
+    }
+    
+  ],
+  "experience": [
+    {
+      "company": "BMKG Sicincin",
+      "period": "2018",
+      "role": "IT Staff",
+      "tasks": ["Mengecek kondisi hardware komputer kantor (CPU, monitor, printer, UPS).", 
+                "Menginstalasi dan update software pendukung operasional.","Membantu mengelola dan melakukan backup data."]
+    },
+    {
+      "company": "Kantor Wali Nagari Kepala Hilalang",
+      "period": "2023",
+      "role": "IT Staff",
+      "tasks": ["Membantu troubleshooting komputer/laptop yang digunakan untuk pengolahan data ",
+                "Melakukan instalasi software yang diperlukan untuk pengolahan data penelitian. "
+                ,"Membantu melakukan pengaturan jaringan atau internat kantor apabila ada kendala"]
+    }
+  ],
+  "technical_stack": {
+    "frontend": ["Tailwind CSS", "JavaScript", "React", "Bootstrap 5"],
+    "backend": ["PHP", "Python", "Node.js", "Laravel", "MySQL"],
+    "tools": ["Git", "Ollama", "MetaTrader 5", "Exness", "Stockfish"]
+  }
+}
