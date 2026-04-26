@@ -466,96 +466,12 @@ const BentoGrid = () => {
       {/* ══════════════════════════════════════
           EXPERIENCE — DESKTOP
       ══════════════════════════════════════ */}
-      <section className="hidden md:block max-w-7xl mx-auto px-12 py-28">
-        <div className="flex gap-16">
-          <div className="w-48 shrink-0">
-            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}>
-              <p className="text-[10px] font-mono tracking-[0.3em] text-amber-500 uppercase mb-1">02</p>
-              <h2 className="text-lg font-bold text-zinc-300">Experience</h2>
-            </motion.div>
-          </div>
-          <div className="flex-1 flex flex-col">
-            {data.experience.map((exp, i) => (
-              <motion.div key={i}
-                initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }} transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="group relative flex gap-6 pb-10 last:pb-0">
-                <div className="flex flex-col items-center">
-                  <div className="w-3 h-3 rounded-full bg-zinc-700 border-2 border-zinc-950 group-hover:bg-amber-500 transition-all duration-300 mt-1.5 shrink-0" />
-                  {i < data.experience.length - 1 && <div className="w-px flex-1 bg-zinc-800 mt-2" />}
-                </div>
-                <div className="flex-1">
-                  <div className="flex items-center justify-between gap-2 mb-2">
-                    <h3 className="text-xl font-bold text-white">{exp.role}</h3>
-                    <span className="text-xs font-mono text-zinc-600 bg-zinc-900 border border-zinc-800 px-3 py-1 rounded-full shrink-0">{exp.period}</span>
-                  </div>
-                  <p className="text-sm font-medium text-amber-500/80 mb-3">{exp.company}</p>
-                  <ul className="flex flex-col gap-1.5">
-                    {exp.tasks.map((t, j) => (
-                      <li key={j} className="text-sm text-zinc-500 flex items-start gap-2.5 group-hover:text-zinc-400 transition-colors">
-                        <span className="w-1 h-1 bg-zinc-700 rounded-full mt-2 shrink-0" />{t}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+      
 
       {/* ══════════════════════════════════════
           EXPERIENCE — MOBILE (horizontal scroll cards)
       ══════════════════════════════════════ */}
-      <section className="md:hidden py-14">
-        <div className="px-5 mb-6 flex items-end justify-between">
-          <div>
-            <p className="text-[10px] font-mono tracking-[0.25em] text-amber-500 uppercase mb-1">02</p>
-            <h2 className="text-2xl font-black text-white tracking-tight">Experience</h2>
-          </div>
-          <span className="text-[10px] font-mono text-zinc-700 uppercase tracking-wide">swipe →</span>
-        </div>
-
-        <div className="flex gap-4 overflow-x-auto px-5 pb-4 snap-x snap-mandatory" style={{ scrollbarWidth: 'none' }}>
-          {data.experience.map((exp, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.1 }}
-              className="snap-start shrink-0 w-[80vw] max-w-[300px] rounded-[24px] p-5 flex flex-col gap-3"
-              style={{ background: 'linear-gradient(145deg, #1c1c1e, #141414)', border: '1px solid rgba(255,255,255,0.07)' }}
-            >
-              {/* index + period */}
-              <div className="flex items-center justify-between">
-                <span className="text-4xl font-black leading-none" style={{ color: 'rgba(245,158,11,0.12)' }}>
-                  {String(i + 1).padStart(2, '0')}
-                </span>
-                <span className="text-[10px] font-mono text-zinc-700 bg-zinc-900 border border-zinc-800 px-2.5 py-1 rounded-full">
-                  {exp.period}
-                </span>
-              </div>
-
-              {/* role + company */}
-              <div>
-                <p className="text-[10px] font-mono text-amber-500 tracking-widest uppercase mb-1.5">{exp.company}</p>
-                <h3 className="text-lg font-black text-white leading-snug tracking-tight">{exp.role}</h3>
-              </div>
-
-              {/* tasks */}
-              <div className="flex flex-col gap-1.5 mt-1">
-                {exp.tasks.map((t, j) => (
-                  <div key={j} className="flex items-start gap-2">
-                    <div className="w-1 h-1 rounded-full bg-amber-500/50 mt-1.5 shrink-0" />
-                    <p className="text-[12px] text-zinc-500 leading-relaxed">{t}</p>
-                  </div>
-                ))}
-              </div>
-            </motion.div>
-          ))}
-        </div>
-      </section>
+      
 
       {/* ══════════════════════════════════════
           TECH STACK + GAME
@@ -565,7 +481,7 @@ const BentoGrid = () => {
 
           {/* section header */}
           <div className="mb-8 md:mb-12 px-0">
-            <p className="text-[10px] font-mono tracking-[0.25em] text-amber-500 uppercase mb-1">03</p>
+            <p className="text-[10px] font-mono tracking-[0.25em] text-amber-500 uppercase mb-1">02</p>
             <h2 className="text-2xl md:text-3xl font-black text-white tracking-tight">Tech</h2>
           </div>
 
@@ -626,7 +542,7 @@ const BentoGrid = () => {
 
         <div className="flex items-end justify-between gap-4 mb-10 md:mb-12">
           <div>
-            <p className="text-[10px] font-mono tracking-[0.25em] text-amber-500 uppercase mb-1">04</p>
+            <p className="text-[10px] font-mono tracking-[0.25em] text-amber-500 uppercase mb-1">03</p>
             <h2 className="text-2xl md:text-4xl font-black text-white tracking-tight">Selected Work</h2>
           </div>
           <p className="text-[10px] font-mono text-zinc-700 uppercase tracking-wide hidden md:block">hover to reveal</p>
