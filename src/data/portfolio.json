@@ -67,7 +67,7 @@
       "stack": ["Python", "Stockfish API"],
       "description": "Bot catur yang terintegrasi dengan mesin catur Stockfish, memberikan pengalaman bermain yang lebih baik bagi pengguna.",
       "live_demo": "#",
-      "repository": "#",
+      "repository": "https://github.com/Ceplin03/stockfish-web-bot",
       "thumbnail": "/images/sentinel.jpg"
     },
     {
