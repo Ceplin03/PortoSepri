@@ -27,7 +27,7 @@ const CustomCursor = () => {
   return (
     <>
       <div ref={ringRef} className="fixed top-0 left-0 w-10 h-10 border border-zinc-400/50 rounded-full pointer-events-none z-[9999] transition-transform duration-[80ms] ease-out mix-blend-difference hidden md:block" />
-      <div ref={dotRef} className="fixed top-0 left-0 w-1.5 h-1.5 bg-white rounded-full pointer-events-none z-[9999] transition-transform duration-[20ms] ease-out mix-blend-difference hidden md:block" />
+      <div ref={dotRef} className="fixed top-0 left-0 w-1.5 h-1.5 bg-white rounded-full pointer-events-none z-[9999] mix-blend-difference hidden md:block" />
     </>
   );
 };
@@ -147,50 +147,56 @@ const DesktopProjectCard = ({ project, index }) => {
       transition={{ duration: 0.5, delay: index * 0.07 }}
       onHoverStart={() => setHovered(true)}
       onHoverEnd={() => setHovered(false)}
-      className="group relative bg-zinc-900 border border-zinc-800 rounded-3xl overflow-hidden cursor-pointer"
+      whileHover={{ y: -6, borderColor: 'rgba(245, 158, 11, 0.4)' }}
+      className="group relative bg-zinc-900 border border-zinc-800 rounded-3xl overflow-hidden cursor-pointer h-[340px]"
     >
       <span className="absolute top-4 right-6 text-7xl font-black text-white/[0.04] select-none pointer-events-none leading-none">
         {String(index + 1).padStart(2, '0')}
       </span>
-      <div className="relative z-10 p-7 flex flex-col gap-4">
-        <div className="flex items-start justify-between gap-4">
-          <div>
-            <span className="text-[11px] font-mono tracking-widest text-amber-500 uppercase">{project.category}</span>
-            <h3 className="text-xl font-bold text-white leading-snug mt-1.5">{project.title}</h3>
-          </div>
-          <motion.div
-            animate={{ rotate: hovered ? 45 : 0, x: hovered ? 3 : 0, y: hovered ? -3 : 0 }}
-            transition={{ type: 'spring', stiffness: 300 }}
-            className="shrink-0 w-9 h-9 bg-zinc-800 border border-zinc-700 rounded-full flex items-center justify-center text-zinc-400 group-hover:bg-amber-500 group-hover:border-amber-500 group-hover:text-zinc-900 transition-colors duration-300"
-          >
-            <FaArrowRight size={13} />
-          </motion.div>
-        </div>
-        <AnimatePresence>
-          {hovered && (
-            <motion.p
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: 'auto' }}
-              exit={{ opacity: 0, height: 0 }}
-              className="text-sm text-zinc-400 leading-relaxed overflow-hidden"
+      <div className="relative z-10 p-7 flex flex-col justify-between h-full">
+        <div className="flex flex-col gap-4">
+          <div className="flex items-start justify-between gap-4">
+            <div className="flex-1">
+              <span className="text-[11px] font-mono tracking-widest text-amber-500 uppercase">{project.category}</span>
+              <h3 className="text-xl font-bold text-white leading-snug mt-1.5 line-clamp-2">{project.title}</h3>
+            </div>
+            <motion.div
+              animate={{ rotate: hovered ? 45 : 0, x: hovered ? 3 : 0, y: hovered ? -3 : 0 }}
+              transition={{ type: 'spring', stiffness: 300 }}
+              className="shrink-0 w-9 h-9 bg-zinc-800 border border-zinc-700 rounded-full flex items-center justify-center text-zinc-400 group-hover:bg-amber-500 group-hover:border-amber-500 group-hover:text-zinc-900 transition-colors duration-300"
             >
-              {project.description}
-            </motion.p>
-          )}
-        </AnimatePresence>
-        <div className="flex flex-wrap gap-1.5 mt-auto">
-          {project.stack.slice(0, 5).map((t, i) => (
-            <span key={i} className="text-[11px] font-mono bg-zinc-800 border border-zinc-700/60 text-zinc-400 px-2.5 py-1 rounded-full">{t}</span>
-          ))}
-          {project.stack.length > 5 && <span className="text-[11px] font-mono text-zinc-600 px-2 py-1">+{project.stack.length - 5}</span>}
+              <FaArrowRight size={13} />
+            </motion.div>
+          </div>
+          <AnimatePresence>
+            {hovered && (
+              <motion.p
+                initial={{ opacity: 0, y: 10, height: 0 }}
+                animate={{ opacity: 1, y: 0, height: 'auto' }}
+                exit={{ opacity: 0, y: 10, height: 0 }}
+                transition={{ duration: 0.25 }}
+                className="text-sm text-zinc-400 leading-relaxed overflow-hidden line-clamp-3"
+              >
+                {project.description}
+              </motion.p>
+            )}
+          </AnimatePresence>
         </div>
-        <div className="flex gap-2 pt-2 border-t border-zinc-800">
-          <a href={project.live_demo} onClick={e => e.stopPropagation()} className="flex items-center gap-1.5 px-4 py-2 bg-white text-zinc-900 text-xs font-bold rounded-full hover:bg-amber-400 transition-colors active:scale-95">
-            <FaExternalLinkAlt size={10} /> Live Demo
-          </a>
-          <a href={project.repository} onClick={e => e.stopPropagation()} target="_blank" rel="noreferrer" className="flex items-center gap-1.5 px-4 py-2 bg-zinc-800 text-zinc-300 border border-zinc-700 text-xs font-medium rounded-full hover:bg-zinc-700 transition-colors active:scale-95">
-            <FaGithub size={12} /> Code
-          </a>
+        <div className="flex flex-col gap-4">
+          <div className="flex flex-wrap gap-1.5">
+            {project.stack.slice(0, 5).map((t, i) => (
+              <span key={i} className="text-[11px] font-mono bg-zinc-800 border border-zinc-700/60 text-zinc-400 px-2.5 py-1 rounded-full">{t}</span>
+            ))}
+            {project.stack.length > 5 && <span className="text-[11px] font-mono text-zinc-600 px-2 py-1">+{project.stack.length - 5}</span>}
+          </div>
+          <div className="flex gap-2 pt-2 border-t border-zinc-800">
+            <a href={project.live_demo} onClick={e => e.stopPropagation()} className="flex items-center gap-1.5 px-4 py-2 bg-white text-zinc-900 text-xs font-bold rounded-full hover:bg-amber-400 transition-colors active:scale-95">
+              <FaExternalLinkAlt size={10} /> Live Demo
+            </a>
+            <a href={project.repository} onClick={e => e.stopPropagation()} target="_blank" rel="noreferrer" className="flex items-center gap-1.5 px-4 py-2 bg-zinc-800 text-zinc-300 border border-zinc-700 text-xs font-medium rounded-full hover:bg-zinc-700 transition-colors active:scale-95">
+              <FaGithub size={12} /> Code
+            </a>
+          </div>
         </div>
       </div>
     </motion.div>
