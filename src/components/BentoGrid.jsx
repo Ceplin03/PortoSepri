@@ -16,7 +16,7 @@ import {
   SiMysql, SiGit, SiPostman, SiVite
 } from 'react-icons/si';
 import data from '../data/portfolio.json';
-import profileImg from '../assets/profile.png';
+import profileImg from '../assets/profile.webp';
 
 // Vite image resolver for production builds
 const projectImages = import.meta.glob('../assets/images/**/*', { eager: true, import: 'default' });
@@ -413,7 +413,7 @@ const ImageGalleryModal = ({ project, onClose }) => {
           </div>
           <div className="flex items-center gap-3">
             <div className="hidden lg:flex items-center gap-1.5 text-[11px] font-mono text-zinc-500 bg-zinc-900 border border-zinc-800 px-3 py-1 rounded-full">
-              Scroll / Double-click = Zoom · Drag = Pan
+              Scroll / Klik Ganda = Zoom · Drag = Geser Tampilan
             </div>
             <button
               onClick={onClose}
@@ -819,8 +819,8 @@ const MobileProjectCard = ({ project, index, onOpenDetail, onOpenGallery }) => {
 const ExperienceSection = () => (
   <section className="max-w-7xl mx-auto px-5 md:px-12 py-16 md:py-24">
     <div className="mb-10 md:mb-14">
-      <p className="text-[10px] font-mono tracking-[0.25em] text-amber-500 uppercase mb-1">03 · Experience</p>
-      <h2 className="text-3xl md:text-5xl font-black text-white tracking-tight">Work Experience</h2>
+      <p className="text-[10px] font-mono tracking-[0.25em] text-amber-500 uppercase mb-1">03 · Pengalaman</p>
+      <h2 className="text-3xl md:text-5xl font-black text-white tracking-tight">Pengalaman Kerja</h2>
       <p className="text-xs md:text-sm text-zinc-400 mt-2 max-w-lg">
         Riwayat pengalaman kerja dan magang di bidang IT.
       </p>
@@ -930,7 +930,7 @@ const BentoGrid = () => {
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3 }}
             className="flex items-center gap-2 text-[11px] font-mono text-zinc-600">
             <span className="w-1.5 h-1.5 bg-emerald-400 rounded-full animate-pulse" />
-            Available for work
+            Siap Menerima Proyek
           </motion.div>
         </nav>
 
@@ -950,7 +950,7 @@ const BentoGrid = () => {
               <div className="flex flex-wrap gap-3">
                 <a href={data.profile.contact.email}
                   className="group flex items-center gap-2.5 px-6 py-3 bg-amber-500 text-zinc-900 rounded-full font-bold text-sm hover:bg-amber-400 transition-all active:scale-95">
-                  <FaEnvelope size={14} /> Get in Touch
+                  <FaEnvelope size={14} /> Hubungi Saya
                   <FaArrowRight size={11} className="group-hover:translate-x-1 transition-transform" />
                 </a>
                 <a href={data.profile.contact.github} target="_blank" rel="noreferrer"
@@ -1037,7 +1037,7 @@ const BentoGrid = () => {
                 <div className="flex gap-2.5">
                   <a href={data.profile.contact.email}
                     className="flex-1 flex items-center justify-center gap-2 py-3.5 bg-amber-500 text-zinc-900 rounded-2xl text-[13px] font-bold tracking-wide hover:bg-amber-400 active:scale-95 transition-all">
-                    <FaEnvelope size={14} /> Email Me
+                    <FaEnvelope size={14} /> Hubungi Saya
                   </a>
                   <a href={data.profile.contact.github} target="_blank" rel="noreferrer"
                     className="flex items-center justify-center w-14 bg-zinc-800 border border-zinc-700/60 rounded-2xl hover:bg-zinc-700 active:scale-95 transition-all">
@@ -1052,9 +1052,9 @@ const BentoGrid = () => {
                 {/* Stats — accurate values, no misleading calculations */}
                 <div className="grid grid-cols-3 gap-2 pt-1">
                   {[
-                    { label: 'Projects', value: `${data.projects?.length ?? 10}+` },
+                    { label: 'Proyek', value: `${data.projects?.length ?? 10}+` },
                     { label: 'Tech Stack', value: `${allTechs.length}+` },
-                    { label: 'Work Exp', value: `${data.experience?.length ?? 2}` },
+                    { label: 'Pengalaman', value: `${data.experience?.length ?? 2}` },
                   ].map((s, i) => (
                     <div key={i} className="flex flex-col items-center py-3 rounded-2xl" style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.06)' }}>
                       <span className="text-xl font-black text-amber-500 leading-none">{s.value}</span>
@@ -1101,7 +1101,7 @@ const BentoGrid = () => {
             </div>
             <div className="hidden md:flex items-center gap-2 text-[11px] font-mono text-zinc-500 bg-zinc-900 border border-zinc-800 px-3.5 py-1.5 rounded-full">
               <span className="w-2 h-2 rounded-full bg-amber-500" />
-              <span>Full-Stack & AI Focused</span>
+              <span>Fokus Full-Stack & AI</span>
             </div>
           </div>
           <BentoTechSection />
@@ -1125,8 +1125,8 @@ const BentoGrid = () => {
       <section className="max-w-7xl mx-auto px-5 md:px-12 py-16 md:py-28">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8 md:mb-12">
           <div>
-            <p className="text-[10px] font-mono tracking-[0.25em] text-amber-500 uppercase mb-1">04 · Portfolio</p>
-            <h2 className="text-3xl md:text-5xl font-black text-white tracking-tight">Selected Work</h2>
+            <p className="text-[10px] font-mono tracking-[0.25em] text-amber-500 uppercase mb-1">04 · Portofolio</p>
+            <h2 className="text-3xl md:text-5xl font-black text-white tracking-tight">Proyek Terpilih</h2>
             <p className="text-xs md:text-sm text-zinc-400 mt-2 max-w-lg">
               Kumpulan proyek terpilih: aplikasi web interaktif, bot AI, tool monitoring, dan mobile app.
             </p>
@@ -1201,17 +1201,17 @@ const BentoGrid = () => {
             viewport={{ once: true }}
             className="flex flex-col items-center gap-6 w-full"
           >
-            <p className="text-[10px] font-mono tracking-[0.3em] text-amber-500 uppercase">05 · Contact</p>
+            <p className="text-[10px] font-mono tracking-[0.3em] text-amber-500 uppercase">05 · Kontak</p>
             <h2 className="text-4xl md:text-6xl lg:text-7xl font-black text-white tracking-tight leading-none">
-              Got a project<br />
-              <span className="text-zinc-700">in mind?</span>
+              Punya ide proyek<br />
+              <span className="text-zinc-700">yang ingin dibuat?</span>
             </h2>
             <p className="text-zinc-500 text-sm md:text-base max-w-sm leading-relaxed">
-              I'm always open to discussing new opportunities, creative projects, or just having a good chat about tech.
+              Saya selalu terbuka untuk mendiskusikan peluang baru, proyek kreatif, atau sekadar bertukar pikiran seputar teknologi.
             </p>
             <a href={data.profile.contact.email}
               className="group flex items-center gap-3 px-8 py-4 bg-amber-500 text-zinc-900 font-bold text-base rounded-full hover:bg-amber-400 transition-all active:scale-95 w-full md:w-auto justify-center">
-              <FaEnvelope size={16} /> Say Hello
+              <FaEnvelope size={16} /> Hubungi Saya
               <FaArrowRight size={13} className="group-hover:translate-x-1 transition-transform" />
             </a>
           </motion.div>
