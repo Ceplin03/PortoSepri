@@ -166,9 +166,8 @@ const BentoTechSection = () => {
           {techCardsData.map((card) => (
             <div
               key={card.id}
-              className={`snap-start shrink-0 w-[84vw] max-w-[310px] rounded-3xl p-5 bg-zinc-900/95 border border-zinc-800 flex flex-col justify-between relative overflow-hidden shadow-lg ${
-                card.isFlagship ? 'ring-1 ring-amber-500/30' : ''
-              }`}
+              className={`snap-start shrink-0 w-[84vw] max-w-[310px] rounded-3xl p-5 bg-zinc-900/95 border border-zinc-800 flex flex-col justify-between relative overflow-hidden shadow-lg ${card.isFlagship ? 'ring-1 ring-amber-500/30' : ''
+                }`}
             >
               {/* Ambient Glow */}
               <div className={`absolute top-0 right-0 w-48 h-48 bg-gradient-to-br ${card.accent} rounded-full blur-2xl pointer-events-none opacity-50`} />
@@ -241,9 +240,8 @@ const BentoTechSection = () => {
             viewport={{ once: true, margin: '-30px' }}
             transition={{ duration: 0.5, delay: idx * 0.08 }}
             whileHover={{ y: -4 }}
-            className={`relative rounded-3xl p-6 md:p-7 bg-zinc-900/90 border border-zinc-800 flex flex-col justify-between overflow-hidden transition-all duration-300 ${card.borderHover} ${
-              card.isFlagship ? 'shadow-xl shadow-amber-500/5 ring-1 ring-amber-500/20' : ''
-            }`}
+            className={`relative rounded-3xl p-6 md:p-7 bg-zinc-900/90 border border-zinc-800 flex flex-col justify-between overflow-hidden transition-all duration-300 ${card.borderHover} ${card.isFlagship ? 'shadow-xl shadow-amber-500/5 ring-1 ring-amber-500/20' : ''
+              }`}
           >
             {/* Subtle Ambient Radial Glow */}
             <div className={`absolute top-0 right-0 w-64 h-64 bg-gradient-to-br ${card.accent} rounded-full blur-3xl pointer-events-none opacity-60`} />
@@ -603,13 +601,12 @@ const ImageGalleryModal = ({ project, onClose }) => {
           onMouseDown={handleMouseDown}
           onTouchStart={handleTouchStart}
           onDoubleClick={handleToggleZoom}
-          className={`relative z-20 flex-1 w-full h-full flex items-center justify-center overflow-hidden ${
-            scale > 1
+          className={`relative z-20 flex-1 w-full h-full flex items-center justify-center overflow-hidden ${scale > 1
               ? isDragging
                 ? 'cursor-grabbing'
                 : 'cursor-grab'
               : 'cursor-zoom-in'
-          }`}
+            }`}
         >
           {/* Main Full-Res Image with Pan & Scale */}
           <div
@@ -720,11 +717,10 @@ const ImageGalleryModal = ({ project, onClose }) => {
                 <button
                   key={idx}
                   onClick={() => switchImage(idx)}
-                  className={`relative w-14 h-10 md:w-16 md:h-11 rounded-lg overflow-hidden border-2 transition-all duration-200 shrink-0 ${
-                    activeIdx === idx
+                  className={`relative w-14 h-10 md:w-16 md:h-11 rounded-lg overflow-hidden border-2 transition-all duration-200 shrink-0 ${activeIdx === idx
                       ? 'border-amber-500 ring-2 ring-amber-500/40 scale-105 opacity-100'
                       : 'border-zinc-800 hover:border-zinc-600 opacity-50 hover:opacity-90'
-                  }`}
+                    }`}
                   title={`Lihat ${img.name}`}
                 >
                   <img
@@ -891,9 +887,8 @@ const DesktopProjectCard = ({ project, index, onOpenDetail, onOpenGallery }) => 
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-50px' }}
       transition={{ duration: 0.6, delay: 0.05 }}
-      className={`group relative w-full bg-zinc-900/90 border border-zinc-800 rounded-3xl p-6 md:p-8 lg:p-10 flex flex-col ${
-        isEven ? 'lg:flex-row-reverse' : 'lg:flex-row'
-      } gap-8 lg:gap-12 items-center hover:border-amber-500/40 hover:shadow-2xl hover:shadow-amber-500/5 transition-all duration-300 overflow-hidden`}
+      className={`group relative w-full bg-zinc-900/90 border border-zinc-800 rounded-3xl p-6 md:p-8 lg:p-10 flex flex-col ${isEven ? 'lg:flex-row-reverse' : 'lg:flex-row'
+        } gap-8 lg:gap-12 items-center hover:border-amber-500/40 hover:shadow-2xl hover:shadow-amber-500/5 transition-all duration-300 overflow-hidden`}
     >
       {/* Subtle Ambient Radial Glow */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-amber-500/[0.07] via-transparent to-transparent rounded-full blur-3xl pointer-events-none" />
@@ -1458,16 +1453,14 @@ const BentoGrid = () => {
                   setActiveCategory(cat.id);
                   setActiveProject(0);
                 }}
-                className={`relative px-4 py-2 rounded-full text-xs font-mono transition-all whitespace-nowrap flex items-center gap-2 ${
-                  isActive
+                className={`relative px-4 py-2 rounded-full text-xs font-mono transition-all whitespace-nowrap flex items-center gap-2 ${isActive
                     ? 'bg-amber-500 text-zinc-950 font-bold shadow-lg shadow-amber-500/20'
                     : 'bg-zinc-900/90 text-zinc-400 border border-zinc-800 hover:border-zinc-700 hover:text-white'
-                }`}
+                  }`}
               >
                 <span>{cat.label}</span>
-                <span className={`px-1.5 py-0.5 rounded-full text-[10px] ${
-                  isActive ? 'bg-zinc-950/20 text-zinc-950 font-black' : 'bg-zinc-800 text-zinc-500'
-                }`}>
+                <span className={`px-1.5 py-0.5 rounded-full text-[10px] ${isActive ? 'bg-zinc-950/20 text-zinc-950 font-black' : 'bg-zinc-800 text-zinc-500'
+                  }`}>
                   {count}
                 </span>
               </button>
