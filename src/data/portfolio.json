@@ -1,6 +1,7 @@
 {
   "profile": {
     "name": "Sepri Iratas",
+    "role": "Full-Stack Developer",
     "tagline": "Lulusan S1 - Sistem Informasi",
     "contact": {
       "email": "mailto:sepriiratas705@gmail.com",
@@ -256,13 +257,15 @@
       "categoryGroup": "web",
       "badge": "Donghua Web",
       "stack": [
-        "Scraper dari sc https://www.sankavollerei.web.id/"
+        "PHP",
+        "Web Scraping",
+        "JavaScript"
       ],
-      "description": "Web Streaming Donghua Yang Terintegrasi Dengan Script Website https://www.sankavollerei.web.id/",
+      "description": "Platform streaming donghua (animasi Tiongkok) dengan agregasi konten otomatis dan antarmuka dark mode yang modern.",
       "highlights": [
-        "Web dibuat dengan scraper data dari website https://www.sankavollerei.web.id/",
-        "Player video stream",
-        "Desain responsif dark mode ala Netflix"
+        "Agregasi konten otomatis via web scraping",
+        "Player video stream terintegrasi",
+        "Antarmuka responsif dark mode"
       ],
       "live_demo": "https://ceplindonghua.rf.gd/",
       "repository": "#",
@@ -279,13 +282,15 @@
       "categoryGroup": "web",
       "badge": "Komik Web",
       "stack": [
-        "Scraper dari sc https://www.sankavollerei.web.id/"
+        "PHP",
+        "Web Scraping",
+        "JavaScript"
       ],
-      "description": "Web Komik Yang Terintegrasi Dengan Script Website https://www.sankavollerei.web.id/",
+      "description": "Platform baca komik online (Manga, Manhua, Manhwa) dengan agregasi konten otomatis dan antarmuka modern.",
       "highlights": [
-        "Web dibuat dengan scraper data dari website https://www.sankavollerei.web.id/",
-        "komik Manga, Manhua, Manhwa",
-        "Desain responsif dark mode"
+        "Katalog Manga, Manhua, dan Manhwa",
+        "Agregasi konten via web scraping",
+        "Antarmuka responsif dark mode"
       ],
       "live_demo": "https://ceplinkomik.netlify.app/",
       "repository": "#",
