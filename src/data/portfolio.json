@@ -13,6 +13,8 @@
       "id": 1,
       "title": "Sentinel Analyzer",
       "category": "Trading Bot",
+      "categoryGroup": "ai",
+      "badge": "🤖 AI & Finance",
       "stack": [
         "Python",
         "MetaTrader 5",
@@ -20,15 +22,27 @@
         "Ollama",
         "Exness API"
       ],
-      "description": "Bot trading otomatis berbasis sentimen berita dengan RR ratio 1:2.",
+      "description": "Bot trading otomatis berbasis analisis sentimen berita finansial real-time dengan risk-reward ratio 1:2.",
+      "highlights": [
+        "Analisis sentimen berita dengan Ollama AI",
+        "Integrasi eksekusi order MetaTrader 5 & Exness",
+        "Manajemen risiko otomatis (Risk-Reward 1:2)"
+      ],
       "live_demo": "#",
       "repository": "#",
-      "thumbnail": "../assets/profile.png"
+      "thumbnail": "/src/assets/images/trading-bot-aset/home.webp",
+      "images": [
+        "/src/assets/images/trading-bot-aset/home.webp",
+        "/src/assets/images/trading-bot-aset/history.webp",
+        "/src/assets/images/trading-bot-aset/mt5.webp"
+      ]
     },
     {
       "id": 2,
-      "title": "Perpustakaan Digital Berbasis Isometrik",
+      "title": "Perpustakaan Digital Isometrik",
       "category": "Web Interaktif",
+      "categoryGroup": "web",
+      "badge": "Isometric UI",
       "stack": [
         "PHP",
         "JavaScript",
@@ -36,85 +50,107 @@
         "Tailwind CSS",
         "MySQL"
       ],
-      "description": "Aplikasi perpustakaan digital dengan desain isometrik yang interaktif dan user-friendly.",
+      "description": "Aplikasi perpustakaan digital dengan visualisasi isometric map 3D interaktif yang modern dan mudah digunakan.",
+      "highlights": [
+        "Navigasi denah rak buku isometrik 3D",
+        "Sistem peminjaman & katalog buku digital",
+        "Antarmuka responsif dengan Tailwind CSS"
+      ],
       "live_demo": "#",
       "repository": "https://github.com/Ceplin03/Perpustakaan-Digital-Berbasis-Isometric",
-      "thumbnail": "/images/sentinel.jpg"
+      "thumbnail": "/src/assets/images/perpustakaan/home.webp",
+      "images": [
+        "/src/assets/images/perpustakaan/home.webp",
+        "/src/assets/images/perpustakaan/dashboard.webp",
+        "/src/assets/images/perpustakaan/invoice.webp",
+        "/src/assets/images/perpustakaan/login.webp",
+        "/src/assets/images/perpustakaan/rak.webp"
+      ]
     },
     {
       "id": 3,
-      "title": "MuntiEggs - E-Commerce Management System",
+      "title": "MuntiEggs - E-Commerce System",
       "category": "Web Ecommerce",
+      "categoryGroup": "web",
+      "badge": "E-Commerce",
       "stack": [
         "PHP",
         "JavaScript",
-        "MySQL"
+        "MySQL",
+        "Tailwind CSS"
       ],
-      "description": "Sistem manajemen e-commerce yang memungkinkan pengelolaan produk, pesanan, dan pembayaran secara efisien.",
+      "description": "Sistem manajemen e-commerce peternakan untuk kelola produk, transaksi, stok, dan laporan secara efisien.",
+      "highlights": [
+        "Dashboard admin manajemen stok & pesanan",
+        "Kalkulasi total belanja & checkout cepat",
+        "Laporan penjualan & riwayat transaksi"
+      ],
       "live_demo": "#",
       "repository": "https://github.com/Ceplin03/E-Commerce-Peternakan",
-      "thumbnail": "/images/sentinel.jpg"
+      "thumbnail": "/src/assets/images/ecommerce-muntieggs/home.webp",
+      "images": [
+        "/src/assets/images/ecommerce-muntieggs/home.webp",
+        "/src/assets/images/ecommerce-muntieggs/dashboard.webp",
+        "/src/assets/images/ecommerce-muntieggs/pesanan.webp",
+        "/src/assets/images/ecommerce-muntieggs/berhasil.webp"
+      ]
     },
     {
       "id": 4,
       "title": "Ceplin Sport - Live Streaming Platform",
-      "category": "Web Streaming Responsive",
+      "category": "Web Streaming",
+      "categoryGroup": "web",
+      "badge": "Football Live Stream",
       "stack": [
         "Laravel 11",
         "Sport API",
-        "Tailwind CSS"
+        "Tailwind CSS",
+        "JavaScript"
       ],
-      "description": "Platform streaming live yang memungkinkan pengelolaan konten dan interaksi pengguna secara efisien.",
-      "live_demo": "#",
-      "repository": "#",
-      "thumbnail": "/images/sentinel.jpg"
+      "description": "Platform streaming olah raga live yang mengintegrasikan jadwal pertandingan real-time dan player video interaktif.",
+      "highlights": [
+        "Integrasi Live Sport API jadwal pertandingan",
+        "Embedded high-quality video player",
+        "Performa tinggi dengan Laravel 11"
+      ],
+      "live_demo": "https://ceplinsportlive.rf.gd/",
+      "repository": "https://github.com/Ceplin03/ceplin-sport",
+      "thumbnail": "/src/assets/images/bola-project/home.webp",
+      "images": [
+        "/src/assets/images/bola-project/home.webp",
+        "/src/assets/images/bola-project/video-play.webp"
+      ]
     },
     {
       "id": 5,
-      "title": "Extension Manga Ai Translator",
-      "category": "Browser Extension",
+      "title": "Chess Bot - Integrated Stockfish",
+      "category": "AI Bot",
+      "categoryGroup": "ai",
+      "badge": "Engine AI",
       "stack": [
-        "JavaScript",
-        "Ollama API"
+        "Python",
+        "Stockfish API",
+        "Pygame"
       ],
-      "description": "Ekstensi browser yang menerjemahkan manga secara otomatis menggunakan AI, memberikan pengalaman membaca yang lebih baik bagi pengguna.",
+      "description": "Bot catur cerdas terintegrasi dengan engine Stockfish untuk perhitungan langkah presisi dan analisis taktik.",
+      "highlights": [
+        "Integrasi engine catur Stockfish v16",
+        "Evaluasi kedalaman posisi & rekomendasi langkah",
+        "Mode simulasi perlawanan bot multitier"
+      ],
       "live_demo": "#",
       "repository": "#",
-      "thumbnail": "/images/sentinel.jpg"
+      "thumbnail": "/src/assets/images/chess/Screenshot 2026-04-28 105555.webp",
+      "images": [
+        "/src/assets/images/chess/Screenshot 2026-04-28 105555.webp"
+      ]
     },
     {
       "id": 6,
-      "title": "Chess Bot - Terintegrasi dengan Stockfish",
-      "category": "AI Bot",
-      "stack": [
-        "Python",
-        "Stockfish API"
-      ],
-      "description": "Bot catur yang terintegrasi dengan mesin catur Stockfish, memberikan pengalaman bermain yang lebih baik bagi pengguna.",
-      "live_demo": "#",
-      "repository": "#",
-      "thumbnail": "/images/sentinel.jpg"
-    },
-    {
-      "id": 7,
-      "title": "Lite Net Monitoring - Bot Deteksi Jaringan",
-      "category": "Network Monitoring Bot",
-      "stack": [
-        "React",
-        "Node.js",
-        "Express.js",
-        "SQLite",
-        "Telegram Bot API"
-      ],
-      "description": "Bot monitoring jaringan yang memberikan notifikasi real-time melalui Telegram ketika terjadi gangguan atau perubahan status jaringan pada beberapa perangkat.",
-      "live_demo": "#",
-      "repository": "#",
-      "thumbnail": "/images/sentinel.jpg"
-    },
-    {
-      "id": 8,
-      "title": "3D Earthquake Monitoring - Monitoring Gempa Real-time",
+      "title": "3D Earthquake Monitoring",
       "category": "3D Visualization",
+      "categoryGroup": "web",
+      "badge": "3D Real-time",
       "stack": [
         "HTML",
         "CSS",
@@ -123,52 +159,142 @@
         "GSAP",
         "Tailwind CSS"
       ],
-      "description": "Platform visualisasi gempa bumi 3D interaktif yang menampilkan data gempa real-time dengan grafik 3D yang memukau menggunakan Three.js dan animasi halus dengan GSAP.",
-      "live_demo": "https://ceplin03.github.io/3d-earthquake-monitor/",
+      "description": "Platform visualisasi gempa bumi 3D interaktif yang menampilkan data gempa bumi real-time pada globe 3D.",
+      "highlights": [
+        "Globe bumi 3D interaktif berbasis Three.js",
+        "Animasi & transisi halus menggunakan GSAP",
+        "Feed data gempa BMKG / USGS real-time"
+      ],
+      "live_demo": "https://3dvisualgempa.netlify.app/",
       "repository": "https://github.com/Ceplin03/3d-earthquake-monitor",
-      "thumbnail": "/images/sentinel.jpg"
+      "thumbnail": "/src/assets/images/3dgempa/1.webp",
+      "images": [
+        "/src/assets/images/3dgempa/1.webp",
+        "/src/assets/images/3dgempa/2.webp"
+      ]
     },
     {
-      "id": 8,
-      "title": "IPTV Pro Max",
-      "category": "Android Application",
+      "id": 7,
+      "title": "IPTV Pro Max Android",
+      "category": "Android App",
+      "categoryGroup": "mobile",
+      "badge": "Android App",
       "stack": [
         "Kotlin",
         "Android Studio",
         "MVVM Architecture",
         "Retrofit"
       ],
-      "description": "Aplikasi Android untuk menonton siaran TV online dengan antarmuka modern dan fitur lengkap.",
+      "description": "Aplikasi Android native untuk streaming siaran TV online dengan antarmuka modern & manajemen playlist M3U.",
+      "highlights": [
+        "Arsitektur bersih MVVM & Kotlin Coroutines",
+        "Pemutar video stream HLS & M3U8",
+        "Manajemen saluran favorit & kategori"
+      ],
       "live_demo": "#",
       "repository": "https://github.com/Ceplin03/iptv-pro-max",
-      "thumbnail": "/images/sentinel.jpg"
+      "thumbnail": "/src/assets/images/iptv/1.webp",
+      "images": [
+        "/src/assets/images/iptv/1.webp",
+        "/src/assets/images/iptv/2.webp",
+        "/src/assets/images/iptv/3.webp",
+        "/src/assets/images/iptv/4.webp"
+      ]
     },
     {
-      "id": 9,
+      "id": 8,
       "title": "Database MLBB",
-      "category": "Desktop Application",
+      "category": "Desktop / Data",
+      "categoryGroup": "web",
+      "badge": "Game Database",
       "stack": [
         "JSON"
       ],
-      "description": "Data MLBB",
+      "description": "Aplikasi pengelolaan & eksplorasi database data hero, item, dan statistik Mobile Legends Bang Bang.",
+      "highlights": [
+        "Katalog lengkap hero & atribut MLBB",
+        "Pencarian & filter kategori role hero",
+        "Struktur data JSON terindeks cepat"
+      ],
       "live_demo": "#",
       "repository": "https://github.com/Ceplin03/database-mlbb.Mobile-Legends-Bang-Bang",
-      "thumbnail": "/images/sentinel.jpg"
+      "thumbnail": "/src/assets/images/dataset-mlbb/1.webp",
+      "images": [
+        "/src/assets/images/dataset-mlbb/1.webp"
+      ]
     },
     {
-      "id": 10,
-      "title": "Ceplin Cinema",
+      "id": 9,
+      "title": "Ceplin Cinema Streaming",
       "category": "Web Streaming",
+      "categoryGroup": "web",
+      "badge": "Movie Web",
       "stack": [
         "PHP",
-        "TMDB API + VidSrc",
+        "TMDB API",
         "Tailwind CSS",
         "JavaScript"
       ],
-      "description": "Streaming Film",
-      "live_demo": "#",
+      "description": "Web streaming film & series populer yang terintegrasi dengan TMDB API untuk metadata & poster terlengkap.",
+      "highlights": [
+        "Integrasi TMDB API metadata film & trending",
+        "Multi-server player video stream",
+        "Desain responsif dark mode ala Netflix"
+      ],
+      "live_demo": "https://ceplinmovie.gt.tc/",
       "repository": "https://github.com/Ceplin03/ceplin-flix",
-      "thumbnail": "/images/sentinel.jpg"
+      "thumbnail": "/src/assets/images/ceplin-cinema/home.webp",
+      "images": [
+        "/src/assets/images/ceplin-cinema/home.webp",
+        "/src/assets/images/ceplin-cinema/video-player.webp"
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Ceplin Donghua",
+      "category": "Web Streaming Donghua",
+      "categoryGroup": "web",
+      "badge": "Donghua Web",
+      "stack": [
+        "Scraper dari sc https://www.sankavollerei.web.id/"
+      ],
+      "description": "Web Streaming Donghua Yang Terintegrasi Dengan Script Website https://www.sankavollerei.web.id/",
+      "highlights": [
+        "Web dibuat dengan scraper data dari website https://www.sankavollerei.web.id/",
+        "Player video stream",
+        "Desain responsif dark mode ala Netflix"
+      ],
+      "live_demo": "https://ceplindonghua.rf.gd/",
+      "repository": "#",
+      "thumbnail": "/src/assets/images/ceplin-donghua/home.webp",
+      "images": [
+        "/src/assets/images/ceplin-donghua/home.webp",
+        "/src/assets/images/ceplin-donghua/play.webp"
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Ceplin Komik",
+      "category": "Web Komik",
+      "categoryGroup": "web",
+      "badge": "Komik Web",
+      "stack": [
+        "Scraper dari sc https://www.sankavollerei.web.id/"
+      ],
+      "description": "Web Komik Yang Terintegrasi Dengan Script Website https://www.sankavollerei.web.id/",
+      "highlights": [
+        "Web dibuat dengan scraper data dari website https://www.sankavollerei.web.id/",
+        "komik Manga, Manhua, Manhwa",
+        "Desain responsif dark mode"
+      ],
+      "live_demo": "https://ceplinkomik.netlify.app/",
+      "repository": "#",
+      "thumbnail": "/src/assets/images/ceplin-komik/home.webp",
+      "images": [
+        "/src/assets/images/ceplin-komik/home.webp",
+        "/src/assets/images/ceplin-komik/terbaru.webp",
+        "/src/assets/images/ceplin-komik/view.webp"
+      ]
     }
   ],
   "experience": [
