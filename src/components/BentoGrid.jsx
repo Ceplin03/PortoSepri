@@ -15,7 +15,7 @@ import {
   SiMysql, SiGit, SiPostman, SiVite
 } from 'react-icons/si';
 import data from '../data/portfolio.json';
-import profileImg from '../assets/profile.webp';
+import profileImg from '../assets/profile.png';
 
 // Import all images dynamically to make sure Vite bundles and hashes them correctly for production
 const projectImages = import.meta.glob('../assets/images/**/*', { eager: true, import: 'default' });
